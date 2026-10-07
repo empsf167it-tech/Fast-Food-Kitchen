@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>BiteCraft — Fast Food. Big Flavor.</title>
+  <meta name="description" content="Handcrafted smash burgers, crispy fried chicken, loaded fries, wraps, and milkshakes made for serious cravings. Order now at BiteCraft.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="BiteCraft — Fast Food. Big Flavor.">
+  <meta property="og:description" content="Handcrafted smash burgers, crispy fried chicken, loaded fries, wraps, and milkshakes made for serious cravings. Order now at BiteCraft.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="header-nav">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Desktop Navigation: Left -->
+        <ul class="nav-desktop-links d-flex list-unstyled m-0 p-0">
+          <li><a href="index.html" class="nav-link-custom active">Home</a></li>
+          <li><a href="menu.html" class="nav-link-custom">Menu</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+          <li><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+        
+        <!-- Logo: Center -->
+        <div class="brand-logo-container">
+          <a href="index.html" class="brand-logo">
+            BITECRAFT
+            <span>FAST FOOD</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation: Right -->
+        <div class="d-flex align-items-center">
+          <button class="theme-toggle-btn me-3" aria-label="Toggle Light and Dark Mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <div class="nav-desktop-reserve">
+            <a href="reservation.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">ORDER NOW</a>
+          </div>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-menu ms-2" aria-label="Open Navigation Overlay">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close" aria-label="Close Navigation Overlay">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <ul class="mobile-nav-links">
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-nav-item mt-3"><a href="reservation.html" class="mobile-nav-btn-tab">ORDER NOW</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Fast Food Hero Section -->
+    <section class="hero-split" id="hero">
+      <!-- Left Image Panel -->
+      <div class="hero-left">
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Double Smashed Cheeseburger with melted cheddar and bacon" class="img-fluid">
+        </div>
+      </div>
+      
+      <!-- Right Content Panel -->
+      <div class="hero-right">
+        <div class="hero-content">
+          <span class="badge-fast-food mb-3">FRESH • FAST • LOADED</span>
+          <h1 class="hero-title mt-2">
+            <span><span>BIG BITES.</span></span>
+            <span><span>BOLD FLAVOR.</span></span>
+          </h1>
+          <p class="hero-subtitle font-body text-secondary-50 mt-3 mb-4">
+            Handcrafted smash burgers, crispy fried chicken, loaded fries and thick milkshakes made for serious cravings.
+          </p>
+          <div class="hero-actions d-flex gap-3 flex-wrap">
+            <a href="reservation.html" class="btn-premium btn-premium-solid">ORDER NOW</a>
+            <a href="menu.html" class="btn-premium btn-premium-outline">EXPLORE MENU</a>
+          </div>
+        </div>
+        
+        <div class="hero-est">EST. 2026</div>
+      </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="section-padding container">
+      <div class="text-center mb-5">
+        <span class="small-label animate-reveal">OUR CATEGORIES</span>
+        <h2 class="section-title animate-reveal stagger-1">WHAT ARE YOU CRAVING?</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Category 1: BURGERS -->
+        <div class="col-lg-4 col-md-6 animate-scale">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Burgers" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">BURGERS</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">HANDCRAFTED SMASH & STACKS &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 2: CHICKEN -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-1">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b" alt="Crispy Fried Chicken" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">CHICKEN</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">CRISPY TENDERS & WINGS &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 3: FRIES -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-2">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713" alt="Loaded Cheese Fries" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">FRIES</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">LOADED & PERI-PERI &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 4: WRAPS -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-3">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f" alt="Chicken Wraps" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">WRAPS</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">CRISPY & SPICY WRAPS &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 5: PIZZA -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-4">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pepperoni Pizza" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">PIZZA</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">PEPPERONI & CHEESE &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 6: SHAKES -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-5">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box" style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699" alt="Chocolate Milkshake" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4" style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">SHAKES</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">THICK & CREAMY SHAKES &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Burgers Section -->
+    <section class="section-padding" style="background-color: var(--card-bg); overflow: hidden;">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <span class="small-label m-0">SIGNATURE CRAVINGS</span>
+            <h2 class="section-title m-0" style="font-size: clamp(2.2rem, 5vw, 4rem);">THE BURGERS EVERYONE TALKS ABOUT</h2>
+          </div>
+          <div class="d-none d-md-block text-end">
+            <a href="menu.html" class="btn-premium-text">VIEW FULL MENU <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="dishes-row">
+          <!-- Item 1 -->
+          <div class="dish-card-custom animate-scale">
+            <div class="dish-img-container">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="The BiteCraft Double">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Signature Burger</span>
+              <div class="dish-name-row">
+                <h3 class="dish-name">THE BITECRAFT DOUBLE</h3>
+                <span class="dish-price">$12.99</span>
+              </div>
+              <p class="dish-desc">Double smashed beef patties, melted cheddar, caramelized onions, pickles and signature house sauce.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 mt-3 py-2 text-center" style="font-size: 0.75rem;">ADD TO ORDER</a>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="dish-card-custom animate-scale stagger-1">
+            <div class="dish-img-container">
+              <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b" alt="Fire Chicken Burger">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Spicy Favorite <span class="badge-spicy">SPICY 🌶️</span></span>
+              <div class="dish-name-row">
+                <h3 class="dish-name">FIRE CHICKEN</h3>
+                <span class="dish-price">$10.99</span>
+              </div>
+              <p class="dish-desc">Crispy fried chicken breast, Nashville hot sauce, creamy slaw, pickles and melted pepper jack cheese.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 mt-3 py-2 text-center" style="font-size: 0.75rem;">ADD TO ORDER</a>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="dish-card-custom animate-scale stagger-2">
+            <div class="dish-img-container">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="BBQ Bacon Stack">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Loaded Stack</span>
+              <div class="dish-name-row">
+                <h3 class="dish-name">BBQ BACON STACK</h3>
+                <span class="dish-price">$13.99</span>
+              </div>
+              <p class="dish-desc">Double smashed beef patties, crispy smoked bacon, smoky BBQ sauce, cheddar cheese and crispy onion rings.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 mt-3 py-2 text-center" style="font-size: 0.75rem;">ADD TO ORDER</a>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="dish-card-custom animate-scale stagger-3">
+            <div class="dish-img-container">
+              <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9" alt="Classic Cheese Burger">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Classic Favorite</span>
+              <div class="dish-name-row">
+                <h3 class="dish-name">CLASSIC CHEESE</h3>
+                <span class="dish-price">$9.99</span>
+              </div>
+              <p class="dish-desc">Single smashed beef patty, double American cheese, fresh lettuce, tomato, onions and house secret sauce.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 mt-3 py-2 text-center" style="font-size: 0.75rem;">ADD TO ORDER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loaded Fries Full Width Section -->
+    <section class="parallax-image-section">
+      <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1585109649139-366815a0d713');"></div>
+      <div class="parallax-overlay" style="background: rgba(0, 0, 0, 0.65);"></div>
+      <div class="parallax-content container text-center">
+        <span class="badge-fast-food mb-3">CHEESY • CRISPY • LOADED</span>
+        <h2 class="animate-reveal text-white my-3" style="font-size: clamp(2.8rem, 7vw, 6rem); font-family: var(--font-heading); line-height: 1;">
+          FRIES JUST GOT LOADED.
+        </h2>
+        <p class="font-body text-white mx-auto mb-4" style="max-width: 600px; font-weight: 300; font-size: 1.1rem; opacity: 0.9;">
+          Crispy golden fries piled high with melted warm cheese, smoked bacon bits, jalapeños, and signature sauces.
+        </p>
+        <a href="menu.html" class="btn-premium btn-premium-solid btn-warning text-dark border-warning">GET LOADED FRIES</a>
+      </div>
+    </section>
+
+    <!-- Combo Section -->
+    <section class="section-padding container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 animate-slide-left">
+          <span class="small-label">MAXIMUM VALUE</span>
+          <h2 class="section-title" style="font-size: clamp(2.5rem, 6vw, 5rem);">MAKE IT A COMBO</h2>
+          <p class="font-body mb-4" style="font-weight: 400; opacity: 0.9;">
+            Upgrade any burger with loaded cheese fries and an ice-cold shake or soft drink. Big flavor, unbeatable combination.
+          </p>
+
+          <div class="combo-card mb-4">
+            <span class="badge-tag mb-2">MOST POPULAR COMBO</span>
+            <h3 class="font-heading display-5 text-warning my-2">THE ULTIMATE COMBO</h3>
+            <p class="mb-3 font-body opacity-90">The BiteCraft Double Burger + Loaded Cheese Fries + Large Chocolate Shake</p>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="font-heading display-6 text-white">$16.99</span>
+              <a href="reservation.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">ORDER COMBO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 animate-slide-right stagger-1">
+          <div class="rounded-3 overflow-hidden shadow-lg" style="aspect-ratio: 4/3;">
+            <img src="https://images.unsplash.com/photo-1610440042657-612c34d95e9f" alt="BiteCraft Ultimate Burger Combo" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hungry Yet CTA Section -->
+    <section class="section-padding text-center" style="background-color: var(--color-charcoal); color: #fff;">
+      <div class="container py-4">
+        <span class="badge-fast-food mb-3">FAST PICKUP & DELIVERY</span>
+        <h2 class="section-title text-white animate-reveal" style="font-size: clamp(3rem, 8vw, 7rem);">HUNGRY YET?</h2>
+        <p class="font-body text-white-50 mx-auto mb-5 animate-reveal stagger-1" style="max-width: 500px; font-weight: 300; font-size: 1.15rem;">
+          Your next favorite meal is only one click away. Order online for fast pickup or hot delivery.
+        </p>
+        <div class="animate-reveal stagger-2">
+          <a href="reservation.html" class="btn-premium btn-premium-solid bg-danger text-white border-danger py-3 px-5" style="font-size: 1rem;">ORDER NOW <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-12">
+          <a href="index.html" class="footer-logo">
+            BITECRAFT
+            <span class="text-warning">FAST FOOD</span>
+          </a>
+          <p class="font-body mt-4" style="opacity: 0.7; max-width: 320px; font-size: 0.9rem;">
+            Handcrafted burgers, crispy chicken, loaded fries and thick shakes made for serious cravings.
+          </p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="col-lg-2 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">EXPLORE</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link-item">Home</a></li>
+            <li><a href="menu.html" class="footer-link-item">Menu</a></li>
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact</a></li>
+            <li><a href="reservation.html" class="footer-link-item">Order Now</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">CATEGORIES</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html" class="footer-link-item">Burgers</a></li>
+            <li><a href="menu.html" class="footer-link-item">Crispy Chicken</a></li>
+            <li><a href="menu.html" class="footer-link-item">Loaded Fries</a></li>
+            <li><a href="menu.html" class="footer-link-item">Chicken Wraps</a></li>
+            <li><a href="menu.html" class="footer-link-item">Milkshakes</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="col-lg-3 col-md-4 col-12">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">GET IN TOUCH</h5>
+          <ul class="footer-links mb-4">
+            <li><a href="mailto:hello@bitecraft.com" class="footer-link-item" style="text-transform: none;">hello@bitecraft.com</a></li>
+            <li><a href="tel:+15552345678" class="footer-link-item">+1 (555) 234-5678</a></li>
+            <li><p class="mb-0" style="font-size: 0.85rem; opacity: 0.7;">125 Market Street,<br>New York, NY 10001</p></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-link-item" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-item" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link-item" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-center text-md-start">Copyright &copy; 2026 BiteCraft. All Rights Reserved.</p>
+        <p class="mb-0 mt-2 mt-md-0 text-center text-md-end" style="font-size: 0.75rem; letter-spacing: 0.15em;">FAST FOOD. BIG FLAVOR.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>Opening Soon — BiteCraft Fast Food</title>
+  <meta name="description" content="A bold new BiteCraft store is opening soon. Get ready for handcrafted smash burgers, crispy chicken, loaded fries and shakes.">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Coming Soon Page Content -->
+  <main class="coming-soon-wrapper container justify-content-between py-5">
+    
+    <!-- Top Brand Logo -->
+    <div class="brand-logo-container mt-3">
+      <a href="index.html" class="brand-logo text-white">
+        BITECRAFT
+        <span class="text-warning">FAST FOOD</span>
+      </a>
+    </div>
+
+    <!-- Center Hero + Countdown -->
+    <div class="my-auto py-5">
+      <span class="badge-fast-food mb-3">GRAND OPENING SOON</span>
+      <h1 class="display-3 font-heading text-white mb-3" style="font-size: clamp(2.5rem, 6vw, 5rem);">FAST FOOD. BIG FLAVOR.</h1>
+      <p class="font-body mx-auto mb-5 text-white-50" style="max-width: 600px; opacity: 0.85; font-weight: 300;">
+        We are launching our newest BiteCraft flagship location! Get ready for double smash burgers, crispy tenders, loaded cheese fries, and thick milkshakes.
+      </p>
+
+      <!-- Countdown Container -->
+      <div class="countdown-container" id="coming-soon-countdown">
+        <!-- Days -->
+        <div class="countdown-box">
+          <span class="countdown-number" id="days">00</span>
+          <div class="countdown-label">DAYS</div>
+        </div>
+        <!-- Hours -->
+        <div class="countdown-box">
+          <span class="countdown-number" id="hours">00</span>
+          <div class="countdown-label">HOURS</div>
+        </div>
+        <!-- Minutes -->
+        <div class="countdown-box">
+          <span class="countdown-number" id="minutes">00</span>
+          <div class="countdown-label">MINUTES</div>
+        </div>
+        <!-- Seconds -->
+        <div class="countdown-box">
+          <span class="countdown-number" id="seconds">00</span>
+          <div class="countdown-label">SECONDS</div>
+        </div>
+      </div>
+
+      <!-- Newsletter input -->
+      <div class="mx-auto mt-5" style="max-width: 450px;">
+        <form id="coming-soon-form" onsubmit="event.preventDefault(); alert('Thank you! You are on the VIP opening list for BiteCraft.'); this.reset();">
+          <div class="luxury-form-group d-flex align-items-center">
+            <div class="flex-grow-1 position-relative">
+              <input type="email" id="cs-email" class="luxury-input text-white border-white" placeholder=" " required style="border-bottom: 1px solid rgba(247, 241, 234, 0.3);">
+              <label for="cs-email" class="luxury-label" style="color: rgba(247, 241, 234, 0.6);">EMAIL ADDRESS</label>
+            </div>
+            <button type="submit" class="btn-premium btn-premium-solid bg-danger text-white border-danger ms-3 py-2 px-4" style="height: fit-content; font-size: 0.75rem;">NOTIFY ME</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Social Links -->
+    <div class="mb-3">
+      <div class="social-links justify-content-center mb-3">
+        <a href="#" class="social-link-item text-white" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social-link-item text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-link-item text-white" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      </div>
+      <p class="mb-0 text-white-50" style="font-size: 0.75rem; opacity: 0.5;">&copy; 2026 BiteCraft. All Rights Reserved.</p>
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

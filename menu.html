@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>The Menu — BiteCraft Fast Food</title>
+  <meta name="description" content="Explore BiteCraft's full fast food menu: handcrafted smash burgers, crispy chicken, loaded fries, wraps, pepperoni pizza, and thick milkshakes.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="The Menu — BiteCraft Fast Food">
+  <meta property="og:description" content="Explore BiteCraft's full fast food menu: handcrafted smash burgers, crispy chicken, loaded fries, wraps, pepperoni pizza, and thick milkshakes.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="header-nav">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Desktop Navigation: Left -->
+        <ul class="nav-desktop-links d-flex list-unstyled m-0 p-0">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="menu.html" class="nav-link-custom active">Menu</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+          <li><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+        
+        <!-- Logo: Center -->
+        <div class="brand-logo-container">
+          <a href="index.html" class="brand-logo">
+            BITECRAFT
+            <span>FAST FOOD</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation: Right -->
+        <div class="d-flex align-items-center">
+          <button class="theme-toggle-btn me-3" aria-label="Toggle Light and Dark Mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <div class="nav-desktop-reserve">
+            <a href="reservation.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">ORDER NOW</a>
+          </div>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-menu ms-2" aria-label="Open Navigation Overlay">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close" aria-label="Close Navigation Overlay">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <ul class="mobile-nav-links">
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link active">Menu</a></li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-nav-item mt-3"><a href="reservation.html" class="mobile-nav-btn-tab">ORDER NOW</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Menu Hero Section -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd');"></div>
+      <div class="page-hero-overlay" style="background: rgba(23,23,23,0.75);"></div>
+      <div class="page-hero-content">
+        <span class="badge-fast-food mb-2">FULL CRAVINGS MENU</span>
+        <h1 class="display-3 font-heading text-white">THE MENU</h1>
+        <p class="font-body text-warning fs-4 mt-2">Big flavors. Fast service. Zero boring bites.</p>
+      </div>
+    </section>
+
+    <!-- Menu Filtering & Product List Section -->
+    <section class="section-padding container">
+      <!-- Interactive Category Filter Bar -->
+      <div class="menu-filter-container">
+        <button class="menu-filter-btn active" data-filter="all">ALL ITEMS</button>
+        <button class="menu-filter-btn" data-filter="burgers">BURGERS</button>
+        <button class="menu-filter-btn" data-filter="chicken">CHICKEN</button>
+        <button class="menu-filter-btn" data-filter="fries">FRIES</button>
+        <button class="menu-filter-btn" data-filter="wraps">WRAPS</button>
+        <button class="menu-filter-btn" data-filter="pizza">PIZZA</button>
+        <button class="menu-filter-btn" data-filter="shakes">SHAKES</button>
+        <button class="menu-filter-btn" data-filter="desserts">DESSERTS</button>
+      </div>
+
+      <!-- Menu Items Container -->
+      <div class="menu-rows-wrapper" id="menu-items-grid">
+
+        <!-- BURGERS -->
+        <div class="menu-row menu-item-card" data-category="burgers">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9" alt="Classic Cheeseburger">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CLASSIC CHEESEBURGER</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$9.99</span>
+            </div>
+            <p class="menu-row-desc">Single smashed beef patty, double American cheese, lettuce, tomato, onions and house secret sauce.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="burgers">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Double Smash Burger">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">DOUBLE SMASH BURGER</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$12.99</span>
+            </div>
+            <p class="menu-row-desc">Double smashed beef patties, melted cheddar, caramelized onions, pickles and signature house sauce.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="burgers">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="BBQ Bacon Stack">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">BBQ BACON STACK</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$13.99</span>
+            </div>
+            <p class="menu-row-desc">Double smashed beef patties, crispy smoked bacon, smoky BBQ sauce, cheddar cheese and crispy onion rings.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="burgers">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b" alt="Fire Chicken Burger">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">FIRE CHICKEN BURGER <span class="badge-spicy">SPICY 🌶️</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$10.99</span>
+            </div>
+            <p class="menu-row-desc">Crispy fried chicken breast, spicy Nashville hot sauce, creamy coleslaw, pickles and melted pepper jack cheese.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="burgers">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Spicy Jalapeño Burger">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">SPICY JALAPEÑO BURGER <span class="badge-spicy">SPICY 🌶️</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$11.99</span>
+            </div>
+            <p class="menu-row-desc">Smashed beef patty, roasted jalapeño peppers, chipotle spicy mayo, lettuce and melted pepper jack cheese.</p>
+          </div>
+        </div>
+
+        <!-- CHICKEN -->
+        <div class="menu-row menu-item-card" data-category="chicken">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710" alt="Crispy Chicken Tenders">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CRISPY CHICKEN TENDERS</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$8.99</span>
+            </div>
+            <p class="menu-row-desc">5 pieces of hand-breaded golden crispy chicken tenders served with honey mustard dipping sauce.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="chicken">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2" alt="Buffalo Chicken Wings">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">BUFFALO WINGS <span class="badge-spicy">SPICY 🌶️</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$9.99</span>
+            </div>
+            <p class="menu-row-desc">8 pieces of jumbo crispy chicken wings tossed in fiery buffalo glaze, served with blue cheese dip.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="chicken">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b" alt="Spicy Chicken Bites">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">SPICY CHICKEN BITES <span class="badge-spicy">SPICY 🌶️</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$8.49</span>
+            </div>
+            <p class="menu-row-desc">Bite-sized crispy tender chicken pieces tossed in zesty peri-peri spice seasoning.</p>
+          </div>
+        </div>
+
+        <!-- FRIES -->
+        <div class="menu-row menu-item-card" data-category="fries">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d" alt="Classic Seasoned Fries">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CLASSIC FRIES</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$4.49</span>
+            </div>
+            <p class="menu-row-desc">Golden crispy skin-on potato fries tossed in signature house sea salt seasoning blend.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="fries">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713" alt="Cheese Fries">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CHEESE FRIES</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$6.49</span>
+            </div>
+            <p class="menu-row-desc">Golden fries smothered in rich, warm melted cheddar cheese sauce.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="fries">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713" alt="Loaded Bacon Fries">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">LOADED BACON FRIES</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$7.99</span>
+            </div>
+            <p class="menu-row-desc">Golden fries piled high with warm melted cheese sauce, smoked bacon bits, and chopped chives.</p>
+          </div>
+        </div>
+
+        <!-- WRAPS -->
+        <div class="menu-row menu-item-card" data-category="wraps">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f" alt="Crispy Chicken Wrap">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CRISPY CHICKEN WRAP</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$9.49</span>
+            </div>
+            <p class="menu-row-desc">Crispy chicken tenders, lettuce, tomato, shredded cheddar cheese and ranch in a warm flour tortilla.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="wraps">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f" alt="Spicy Chicken Wrap">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">SPICY CHICKEN WRAP <span class="badge-spicy">SPICY 🌶️</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$9.99</span>
+            </div>
+            <p class="menu-row-desc">Spicy chicken tenders, fiery chipotle mayo, pickled jalapeños, lettuce and melted pepper jack cheese.</p>
+          </div>
+        </div>
+
+        <!-- PIZZA -->
+        <div class="menu-row menu-item-card" data-category="pizza">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pepperoni Pizza">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">PEPPERONI PIZZA</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$13.99</span>
+            </div>
+            <p class="menu-row-desc">Crispy hand-tossed crust, spicy cup pepperoni, mozzarella cheese and rich tomato marinara.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="pizza">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee" alt="Cheese Pizza">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CHEESE LOVER'S PIZZA</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$11.99</span>
+            </div>
+            <p class="menu-row-desc">Blend of mozzarella, white cheddar, provolone and parmesan cheeses over herb garlic tomato sauce.</p>
+          </div>
+        </div>
+
+        <!-- SHAKES -->
+        <div class="menu-row menu-item-card" data-category="shakes">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699" alt="Chocolate Shake">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CHOCOLATE MILKSHAKE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$5.49</span>
+            </div>
+            <p class="menu-row-desc">Rich Belgian chocolate ice cream blended with fresh milk, topped with whipped cream and cocoa drizzle.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="shakes">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc" alt="Strawberry Shake">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">STRAWBERRY MILKSHAKE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$5.49</span>
+            </div>
+            <p class="menu-row-desc">Real strawberry puree blended with creamy vanilla bean ice cream and whipped topping.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="shakes">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699" alt="Loaded Oreo Shake">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">LOADED OREO SHAKE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$5.99</span>
+            </div>
+            <p class="menu-row-desc">Crushed Oreo cookies blended into thick vanilla ice cream with chocolate sauce and Oreo crumbles.</p>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-row menu-item-card" data-category="desserts">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Chocolate Brownie">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CHOCOLATE BROWNIE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$4.99</span>
+            </div>
+            <p class="menu-row-desc">Warm fudgy chocolate brownie served with hot chocolate fudge drizzle.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="desserts">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" alt="Loaded Cookie">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">LOADED CHOCOLATE COOKIE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">$4.49</span>
+            </div>
+            <p class="menu-row-desc">Giant gooey chocolate chip cookie baked fresh daily, packed with chocolate chunks.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding text-center bg-danger text-white">
+      <div class="container py-4">
+        <h2 class="section-title text-white animate-reveal" style="font-size: clamp(2.5rem, 6vw, 5.5rem);">READY TO PLACE YOUR ORDER?</h2>
+        <p class="font-body mx-auto mb-4" style="max-width: 500px; opacity: 0.9;">
+          Skip the line and order ahead for quick pickup or delivery straight to your door.
+        </p>
+        <a href="reservation.html" class="btn-premium btn-premium-solid bg-white text-danger border-white py-3 px-5 fw-bold">ORDER ONLINE NOW</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-12">
+          <a href="index.html" class="footer-logo">
+            BITECRAFT
+            <span class="text-warning">FAST FOOD</span>
+          </a>
+          <p class="font-body mt-4" style="opacity: 0.7; max-width: 320px; font-size: 0.9rem;">
+            Handcrafted burgers, crispy chicken, loaded fries and thick shakes made for serious cravings.
+          </p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="col-lg-2 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">EXPLORE</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link-item">Home</a></li>
+            <li><a href="menu.html" class="footer-link-item">Menu</a></li>
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact</a></li>
+            <li><a href="reservation.html" class="footer-link-item">Order Now</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">CATEGORIES</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html" class="footer-link-item">Burgers</a></li>
+            <li><a href="menu.html" class="footer-link-item">Crispy Chicken</a></li>
+            <li><a href="menu.html" class="footer-link-item">Loaded Fries</a></li>
+            <li><a href="menu.html" class="footer-link-item">Chicken Wraps</a></li>
+            <li><a href="menu.html" class="footer-link-item">Milkshakes</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="col-lg-3 col-md-4 col-12">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">GET IN TOUCH</h5>
+          <ul class="footer-links mb-4">
+            <li><a href="mailto:hello@bitecraft.com" class="footer-link-item" style="text-transform: none;">hello@bitecraft.com</a></li>
+            <li><a href="tel:+15552345678" class="footer-link-item">+1 (555) 234-5678</a></li>
+            <li><p class="mb-0" style="font-size: 0.85rem; opacity: 0.7;">125 Market Street,<br>New York, NY 10001</p></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-link-item" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-item" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link-item" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-center text-md-start">Copyright &copy; 2026 BiteCraft. All Rights Reserved.</p>
+        <p class="mb-0 mt-2 mt-md-0 text-center text-md-end" style="font-size: 0.75rem; letter-spacing: 0.15em;">FAST FOOD. BIG FLAVOR.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
