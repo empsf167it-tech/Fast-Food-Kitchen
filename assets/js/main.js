@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountdown();
   initForms();
   initMenuFilters();
+  initBackToTop();
 });
 
 /* ==========================================================================
@@ -384,3 +385,38 @@ function initForms() {
     });
   }
 }
+
+/* ==========================================================================
+   10. BACK TO TOP BUTTON
+   ========================================================================== */
+function initBackToTop() {
+  let btn = document.getElementById('back-to-top');
+  if (!btn) {
+    btn = document.createElement('button');
+    btn.id = 'back-to-top';
+    btn.className = 'back-to-top-btn';
+    btn.setAttribute('aria-label', 'Back to top');
+    btn.innerHTML = '<i class="bi bi-chevron-up"></i>';
+    document.body.appendChild(btn);
+  }
+
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+

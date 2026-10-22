@@ -14,6 +14,10 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+
   <!-- Bootstrap 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons CDN -->
@@ -39,8 +43,11 @@
         <!-- Logo: Center -->
         <div class="brand-logo-container">
           <a href="index.html" class="brand-logo">
-            BITECRAFT
-            <span>FAST FOOD</span>
+            <img src="assets/images/logo.svg" alt="BiteCraft Logo" class="brand-logo-img">
+            <div>
+              BITECRAFT
+              <span>FAST FOOD</span>
+            </div>
           </a>
         </div>
 
@@ -207,14 +214,14 @@
     </section>
 
     <!-- Signature Burgers Section -->
-    <section class="section-padding" style="background-color: var(--card-bg); overflow: hidden;">
+    <section class="section-padding" style="background-color: var(--card-bg);">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-end mb-5">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4 mb-md-5">
           <div>
             <span class="small-label m-0">SIGNATURE CRAVINGS</span>
-            <h2 class="section-title m-0" style="font-size: clamp(2.2rem, 5vw, 4rem);">THE BURGERS EVERYONE TALKS ABOUT</h2>
+            <h2 class="section-title m-0" style="font-size: clamp(2rem, 5vw, 4rem);">THE BURGERS EVERYONE TALKS ABOUT</h2>
           </div>
-          <div class="d-none d-md-block text-end">
+          <div class="text-start text-md-end">
             <a href="menu.html" class="btn-premium-text">VIEW FULL MENU <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
@@ -283,6 +290,11 @@
               <a href="reservation.html" class="btn-premium btn-premium-solid w-100 mt-3 py-2 text-center" style="font-size: 0.75rem;">ADD TO ORDER</a>
             </div>
           </div>
+        </div>
+        
+        <!-- Mobile View Full Menu Link -->
+        <div class="d-md-none text-center mt-4">
+          <a href="menu.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">VIEW FULL MENU <i class="bi bi-arrow-right ms-1"></i></a>
         </div>
       </div>
     </section>
@@ -354,10 +366,13 @@
         <!-- Brand Info -->
         <div class="col-lg-4 col-md-12">
           <a href="index.html" class="footer-logo">
-            BITECRAFT
-            <span class="text-warning">FAST FOOD</span>
+            <img src="assets/images/logo.svg" alt="BiteCraft Logo" class="footer-logo-img">
+            <div>
+              BITECRAFT
+              <span class="footer-brand-sub" style="color: #FFC107 !important; font-weight: 800; letter-spacing: 0.35em; display: block;">FAST FOOD</span>
+            </div>
           </a>
-          <p class="font-body mt-4" style="opacity: 0.7; max-width: 320px; font-size: 0.9rem;">
+          <p class="font-body mt-4" style="max-width: 320px; font-size: 0.9rem; color: #FAF4F0 !important; opacity: 0.95;">
             Handcrafted burgers, crispy chicken, loaded fries and thick shakes made for serious cravings.
           </p>
         </div>
@@ -409,6 +424,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
